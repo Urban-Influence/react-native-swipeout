@@ -3,7 +3,7 @@ import {PanResponder, TouchableHighlight, StyleSheet, Text, View} from 'react-na
 import tweenState from 'react-tween-state';
 import styles from './styles.js';
 
-const SwipeoutBtn = React.createClass({
+export class SwipeoutBtn extends Component {
 
   propTypes: {
     backgroundColor: PropTypes.string,
@@ -82,7 +82,7 @@ const SwipeoutBtn = React.createClass({
   }
 });
 
-const Swipeout = React.createClass({
+export class Swipeout extends Component {
   mixins: [tweenState.Mixin],
 
   propTypes: {
